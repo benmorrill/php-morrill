@@ -8,7 +8,7 @@
 		//get authors data
 		$a = "select * from authors order by l_name, f_name";
 		require_once 'liblogin.php';
-		$conn = new mysqli($hostname, $user, $pword, $database, 3305, '/Applications/MAMP/tmp/mysql/mysql.sock');
+		$conn = new mysqli($hostname, $user, $pword, $database, 8888, '/Applications/MAMP/tmp/mysql/mysql.sock');
 		if ($conn->connect_error) die($conn->connect_error);
 		$result = $conn->query($a);
 	 ?>	
